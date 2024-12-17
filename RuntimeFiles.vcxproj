@@ -66,7 +66,7 @@
     <NMakeOutput>
     </NMakeOutput>
     <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <OutDir>$(SolutionDir)bin\x64\$(Configuration)\net9.0-windows</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\net9.0-windows</OutDir>
     <NMakeBuildCommandLine>IF NOT EXIST "$(OutDir)\bin32" mkdir "$(OutDir)\bin32"
 xcopy /d /y "$(ProjectDir)bin32\*.*" "$(OutDir)\bin32\"
 
@@ -88,7 +88,7 @@ IF NOT EXIST "$(OutDir)\Gear" mkdir "$(OutDir)\Gear"
 xcopy /d /y /e "$(ProjectDir)Gear" "$(OutDir)\Gear" 
 
 xcopy /d /y "$(ProjectDir)\*.xml" "$(OutDir)\"</NMakeBuildCommandLine>
-    <IntDir>$(SolutionDir)build\$(Platform)\$(Configuration)\$(ProjectName)\obj</IntDir>
+    <IntDir>$(SolutionDir)build\$(Configuration)\$(Platform)\$(ProjectName)\obj</IntDir>
     <NMakeCleanCommandLine>del "$(OutDir)\bin32\*.dll"
 del "$(OutDir)\bin64\*.dll"
 del "$(OutDir)\bin64\*.txt"
@@ -111,7 +111,7 @@ rmdir /s /q "$(OutDir)\Themes"</NMakeCleanCommandLine>
     <NMakeOutput>
     </NMakeOutput>
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <OutDir>$(ProjectDir)..\..\bin\x64\$(Configuration)\net9.0-windows\bin32</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\net9.0-windows</OutDir>
     <NMakeBuildCommandLine>IF NOT EXIST "$(OutDir)\bin32" mkdir "$(OutDir)\bin32"
 xcopy /d /y "$(ProjectDir)bin32\*.*" "$(OutDir)\bin32\"
 
@@ -133,7 +133,7 @@ IF NOT EXIST "$(OutDir)\Gear" mkdir "$(OutDir)\Gear"
 xcopy /d /y /e "$(ProjectDir)Gear" "$(OutDir)\Gear" 
 
 xcopy /d /y "$(ProjectDir)\*.xml" "$(OutDir)\"</NMakeBuildCommandLine>
-    <IntDir>$(SolutionDir)build\$(Platform)\$(Configuration)\$(ProjectName)\obj</IntDir>
+    <IntDir>$(SolutionDir)build\$(Configuration)\$(Platform)\$(ProjectName)\obj</IntDir>
     <NMakeCleanCommandLine>del "$(OutDir)\bin32\*.dll"
 del "$(OutDir)\bin64\*.dll"
 del "$(OutDir)\bin64\*.txt"
@@ -156,7 +156,7 @@ rmdir /s /q "$(OutDir)\Themes"</NMakeCleanCommandLine>
     <NMakeOutput>
     </NMakeOutput>
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <OutDir>$(ProjectDir)..\..\bin\x64\$(Configuration)\net9.0-windows\bin32</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\net9.0-windows</OutDir>
     <NMakeBuildCommandLine>IF NOT EXIST "$(OutDir)\bin32" mkdir "$(OutDir)\bin32"
 xcopy /d /y "$(ProjectDir)bin32\*.*" "$(OutDir)\bin32\"
 
@@ -178,7 +178,7 @@ IF NOT EXIST "$(OutDir)\Gear" mkdir "$(OutDir)\Gear"
 xcopy /d /y /e "$(ProjectDir)Gear" "$(OutDir)\Gear" 
 
 xcopy /d /y "$(ProjectDir)\*.xml" "$(OutDir)\"</NMakeBuildCommandLine>
-    <IntDir>$(SolutionDir)build\$(Platform)\$(Configuration)\$(ProjectName)\obj</IntDir>
+    <IntDir>$(SolutionDir)build\$(Configuration)\$(Platform)\$(ProjectName)\obj</IntDir>
     <NMakeCleanCommandLine>del "$(OutDir)\bin32\*.dll"
 del "$(OutDir)\bin64\*.dll"
 del "$(OutDir)\bin64\*.txt"
@@ -201,7 +201,7 @@ rmdir /s /q "$(OutDir)\Themes"</NMakeCleanCommandLine>
     <NMakeOutput>
     </NMakeOutput>
     <NMakePreprocessorDefinitions>NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <OutDir>$(SolutionDir)bin\x64\$(Configuration)\net9.0-windows</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\net9.0-windows</OutDir>
     <NMakeBuildCommandLine>IF NOT EXIST "$(OutDir)\bin32" mkdir "$(OutDir)\bin32"
 xcopy /d /y "$(ProjectDir)bin32\*.*" "$(OutDir)\bin32\"
 
@@ -223,7 +223,7 @@ IF NOT EXIST "$(OutDir)\Gear" mkdir "$(OutDir)\Gear"
 xcopy /d /y /e "$(ProjectDir)Gear" "$(OutDir)\Gear" 
 
 xcopy /d /y "$(ProjectDir)\*.xml" "$(OutDir)\"</NMakeBuildCommandLine>
-    <IntDir>$(SolutionDir)build\$(Platform)\$(Configuration)\$(ProjectName)\obj</IntDir>
+    <IntDir>$(SolutionDir)build\$(Configuration)\$(Platform)\$(ProjectName)\obj</IntDir>
     <NMakeCleanCommandLine>del "$(OutDir)\bin32\*.dll"
 del "$(OutDir)\bin64\*.dll"
 del "$(OutDir)\bin64\*.txt"
